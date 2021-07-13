@@ -1,0 +1,86 @@
+/* -----common use or utilities */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    
+}
+
+/*--------banner section---- */
+.banner{
+    background-color: #2d25ad;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    padding: 30px 0;
+}
+.banner-text{
+    width: 40%;
+    margin-right: 50px;
+    margin-left: 120px;
+    padding: 20px 50px;
+}
+
+.banner-text h1{
+    font-size: 60px;
+    color: #fff;
+    
+}
+.button{
+    background-color: rgba(255, 0, 0, 0.705);
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+}
+.banner-button i{
+    margin-left: 10px;
+    color: white;
+}
+.banner img{
+    width: 50%;
+}
+.banner-img img{
+    width: 500px;
+    margin-right: 40px;
+}
+
+
+
+/* ---------player information-------- */
+ 
+ .players{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 65px;
+     
+      
+   
+ }
+ .player{  
+     width: 220px;
+     box-shadow: 10px 10px 20px gray;
+     /* border: 0.1px solid gray; */
+     padding: 5%;
+     margin-top: 27px;
+ }
+
+.player img{
+    width: 224px;
+    height: 200px;
+}
+ 
+/* .player-detail{
+    display: flex;
+     */
+}
