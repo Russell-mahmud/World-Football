@@ -1,8 +1,13 @@
 /* -----common use or utilities */
+body{
+    background-color: rgb(255, 255, 255);
+}
 
 main{
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .container{
@@ -10,7 +15,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
+    
 
     
 }
@@ -62,7 +68,7 @@ main{
  .players{
      display: grid;
      grid-template-columns: repeat(3,1fr);
-     grid-column-gap: 65px;
+     grid-column-gap: 40px;
      
       
    
@@ -70,7 +76,6 @@ main{
  .player{  
      width: 220px;
      box-shadow: 10px 10px 20px gray;
-     /* border: 0.1px solid gray; */
      padding: 5%;
      margin-top: 27px;
  }
@@ -79,8 +84,75 @@ main{
     width: 224px;
     height: 200px;
 }
- 
-/* .player-detail{
+ /* --------------------bonus part-------------------------- */
+
+ .bonus-container{
+     
+     
+     display: flex;
+     grid-template-columns: 1fr 1fr;
+      grid-column-gap: 40px;
+     justify-content: center;
+     align-items: center;
+     
+     background-color: rgba(255, 253, 253, 0.219);
+     margin-top: 70px;
+     
+
+ }
+
+ .bonus-part{
+
     display: flex;
-     */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     
+    
+ }
+ .bonus-title{
+    width: 40%;
+    margin-right: 50px;
+    margin-left: 30px;
+    padding: 2px 5px;
+ }
+ .sort-title{
+     font-size: 50px;
+     
+     margin-left: 30px;
+     
+ }
+ .title, .bonus-button{
+     margin-left: 50px;
+ }
+ 
+.bonus-part img{
+    width: 450px;
+    height: 400px;
+    
+}
+ 
+ /* ------football logo----------- */
+ .football-container{
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+.football-logo img{
+    width: 400px;
+}
+/* ----footer logo------ */
+.footer-section{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+.logo span {
+    font-size: 30px;
+   
+     
+     
 }
