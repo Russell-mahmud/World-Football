@@ -46,10 +46,15 @@ main{
     background-color: rgba(255, 0, 0, 0.705);
     text-decoration: none;
     color: white;
-    padding: 8px;
-    font-size: 12px;
+    padding: 13px;
+    font-size: 22px;
 }
-.banner-button i{
+
+.banner-button, a:hover{
+    color: rgba(26, 34, 9, 0.966);
+}
+ 
+.banner-button, .button i{
     margin-left: 10px;
     color: white;
 }
@@ -122,6 +127,9 @@ main{
      margin-left: 30px;
      
  }
+ /* .bonus-button, .button:hover{
+     color: black;
+ } */
  .title, .bonus-button{
      margin-left: 50px;
  }
@@ -155,4 +163,51 @@ main{
    
      
      
+}
+/* ---------media quirey------------- */
+/* mobail device-------- */
+@media only screen and (max-width:688px) {
+
+     
+    
+    .container{
+        width: 100%;
+    }
+     
+    .banner{
+      
+        background-color: rgb(9, 224, 224);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+         margin-right: 10px;
+        padding-left: 2px;
+    }
+     
+     .players{
+         display: flex;
+         flex-direction: column;
+     }
+     .bonus-part{
+         display: flex;
+         flex-direction: column;
+     }
+     .football-logo{
+         width: 100%;
+         text-align: center;
+     }
+     
+}    
+/*-------------------------- tablet device--------------------- */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .banner{
+        background-color: rgb(1, 122, 55);
+        display: flex;
+        flex-direction: column;
+    }
+    .players{
+        display: flex;
+         flex-direction: column;
+         grid-template-columns: repeat(2,1fr);
+    }
 }
